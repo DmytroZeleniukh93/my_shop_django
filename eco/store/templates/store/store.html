@@ -9,7 +9,7 @@
             <h6><strong>{{ product.name }}</strong></h6>
             <hr>
 
-            <button type="button" class="btn btn-success">Купити</button>
+            <button data-product="{{product.id}}" data-action="add" class="btn btn-success add-btn update-cart">Купити</button>
             <a class="btn btn-light" href="#">View</a>
             <h4 style="display: inLine-block;float: right"><strong>{{ product.price|floatformat:2}} грн.</strong></h4>
         </div>
